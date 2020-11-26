@@ -4,7 +4,7 @@
 	<vendor>Keil</vendor>
 	<name>SC32F53xx_DFP</name>
 	<description>Silan SC32F53xx Device Family Pack</description>
-	<url>https://github.com/Silanpack/SilanPack</url>
+	<url>https://github.com/Silanpack/Pack</url>
 	
 	<releases>
 		<release version="1.0.6" date="2020-09-10">
