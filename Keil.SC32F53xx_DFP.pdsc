@@ -7,7 +7,7 @@
 	<url>https://github.com/Silanpack/Pack</url>
 	
 	<releases>
-		<release version="1.0.6" date="2020-09-10">
+		<release version="1.0.6" date="2020-11-10">
 			update Flash Algorithm
 			add iar environment
 		</release>	
@@ -47,7 +47,7 @@
 
 	<!-- devices section (mandatory for Device Family Packs) -->
 	<devices>
-		<family Dfamily="SC32F53 Series" Dvendor="SILAN">
+		<family Dfamily="SC32F53 Series" Dvendor="SILAN:164">
 		<!-- ************************  Subfamily 'SC32F53xx'  **************************** -->
 			<subFamily DsubFamily="SC32F53xx">
 				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
