@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
-	<vendor>Keil</vendor>
+	<vendor>Silan</vendor>
 	<name>SC32F53xx_DFP</name>
 	<description>Silan SC32F53xx Device Family Pack</description>
 	<url>https://github.com/Silanpack/Pack</url>
 	
 	<releases>
+		<release version="1.0.8" date="2020-11-30">
+			change vender Keil to Silan
+		</release>	
+	
+		<release version="1.0.7" date="2020-11-10">
+			change vender Keil to Silan
+		</release>	
+	
 		<release version="1.0.6" date="2020-11-10">
 			update Flash Algorithm
 			add iar environment
@@ -287,7 +295,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 			</files>
 		</component>
 		<component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="CRC" Cversion="2.0.0" condition="SC32F53xx STDPERIPH">
-			<description>CMP driver for SC32F53xx</description>
+			<description>CRC driver for SC32F53xx</description>
 			<RTE_Components_h>
         		#define RTE_DEVICE_STDPERIPH_CRC
       		</RTE_Components_h>
