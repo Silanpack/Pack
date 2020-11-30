@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<index schemaVersion="1.0.0" xs:noNamespaceSchemaLocation="PackIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
-  <vendor>Silan</vendor>
-  <url>http://www.keil.com/pack/</url>
-  <timestamp>2020-11-27T12:56:30.8437571+00:00</timestamp>
-  <pindex>
-	<pdsc url="https://github.com/Silanpack/Pack" vendor="Silan" name="SC32F53xx_DFP" version="1.0.8"/>
-  </pindex>
-</index>
