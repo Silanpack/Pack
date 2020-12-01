@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
-	<vendor>Silan</vendor>
+	<vendor>SILAN</vendor>
 	<name>SC32F53xx_DFP</name>
 	<description>Silan SC32F53xx Device Family Pack</description>
-	<url>https://github.com/Silanpack/Pack</url>
+	<url>https://github.com/Silanpack/Pack/blob/main/</url>
 	
 	<releases>
 		<release version="1.0.8" date="2020-11-30">
-			change vender Keil to Silan
+			update it files
 		</release>	
 	
-		<release version="1.0.7" date="2020-11-10">
+		<release version="1.0.7" date="2020-11-28">
 			change vender Keil to Silan
 		</release>	
 	
@@ -132,25 +132,25 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		<condition id="SC32F53128">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F53128"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53128"/>
 		</condition>
 	
 		<condition id="SC32F53128_BOOT">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F53128_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53128_BOOT"/>
 		</condition>
 		
 		<condition id="SC32F5364">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5364"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364"/>
 		</condition>
 	
 		<condition id="SC32F5364_BOOT">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5364_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364_BOOT"/>
 		</condition>
     
 		<condition id="Startup ARM">
@@ -170,7 +170,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<condition id="SC32F53xx">
 			<description>Silan Microelectronics SC32F53128xx Device</description>
-			<require Dvendor="SILAN" Dname="SC32F53*"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53*"/>
 		</condition>
 		
 		<condition id="SC32F53xx STDPERIPH">
@@ -259,7 +259,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 				<file category="include" name="Device/StdPeriph_Driver/inc/"/>
 				<file category="header"  name="Device/StdPeriph_Driver/inc/misc.h"/>
 				<file category="source"  name="Device/StdPeriph_Driver/src/misc.c"/>
-				<file category="source" name="Device/StdPeriph_Driver/templates/sc32f53xx_conf.h" attr="config" version="2.0.0"/>
+				<file category="header" name="Device/StdPeriph_Driver/templates/sc32f53xx_conf.h" attr="config" version="2.0.0"/>
 				<file category="header" name="Device/StdPeriph_Driver/templates/sc32f53xx_it.h" attr="template" select="Interrupt Service Routines"/>
 				<file category="source" name="Device/StdPeriph_Driver/templates/sc32f53xx_it.c" attr="template" select="Interrupt Service Routines"/>
 			</files>
