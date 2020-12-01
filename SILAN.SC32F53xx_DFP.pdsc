@@ -4,7 +4,7 @@
 	<vendor>SILAN</vendor>
 	<name>SC32F53xx_DFP</name>
 	<description>Silan SC32F53xx Device Family Pack</description>
-	<url>https://github.com/Silanpack/Pack/blob/main/</url>
+	<url>https://github.com/Silanpack/Pack/raw/main/</url>
 	
 	<releases>
 		<release version="1.0.8" date="2020-11-30">
