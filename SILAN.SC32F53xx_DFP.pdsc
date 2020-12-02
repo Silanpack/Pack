@@ -12,38 +12,8 @@
 		</release>	
 	
 		<release version="1.0.7" date="2020-11-28">
-			change vender Keil to Silan
+			Initial Version
 		</release>	
-	
-		<release version="1.0.6" date="2020-11-10">
-			update Flash Algorithm
-			add iar environment
-		</release>	
-	
-		<release version="1.0.5" date="2020-06-13">
-			update StdPeriph_Driver
-		</release>
-	
-		<release version="1.0.4" date="2020-04-08">
-			update Flash algorithm
-			update Program library
-		</release>
-	
-		<release version="1.0.3" date="2020-01-13">
-			update bootloader Flash algorithm
-		</release>
-		
-		<release version="1.0.2" date="2019-12-19">
-			update register
-		</release>
-	
-		<release version="1.0.1" date="2019-05-14">
-			update Flash Algorithm
-		</release>
-	
-		<release version="1.0.0" date="2019-04-22">
-			First Version
-		</release>
 	</releases>
   
 	<keywords>
