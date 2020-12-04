@@ -2,8 +2,10 @@
 <index schemaVersion="1.0.0" xs:noNamespaceSchemaLocation="PackIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
   <vendor>SILAN</vendor>
   <url>https://github.com/Silanpack/Pack/raw/main/</url>
-  <timestamp>2020-12-02T08:00:30.8437571+00:00</timestamp>
+  <timestamp>2020-12-04T08:00:30.8437571+00:00</timestamp>
   <pindex>
 	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F53xx_DFP" version="1.0.8"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5632_DFP" version="1.1.0"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5832_DFP" version="1.1.0"/>
   </pindex>
 </index>
