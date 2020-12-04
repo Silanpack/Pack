@@ -21,7 +21,7 @@
 			<!-- ************************  Subfamily 'Silan_SC32F58xx'  **************************** -->
 			<subFamily DsubFamily="SC32F58xx">
 				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
-				<processor Dclock="48000000"/>
+				<processor Dclock="72000000"/>
 				<feature type="VCC"				n="2.00"	m="5.50"/>
 				<feature type="Temp"			n="-40"		m="85"/>
 				<feature type="UART"			n="2"/>

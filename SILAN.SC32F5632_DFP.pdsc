@@ -24,7 +24,7 @@
 			<!-- ************************  Subfamily 'Silan_SC32F56xx'  **************************** -->
 			<subFamily DsubFamily="SC32F56xx">
 				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
-				<processor Dclock="48000000"/>
+				<processor Dclock="64000000"/>
 				<feature type="VCC"				n="2.00"	m="5.50"/>
 				<feature type="Temp"			n="-40"		m="85"/>
 				<feature type="UART"			n="2"/>
@@ -43,7 +43,7 @@
 					<memory id="IRAM1" start="0x20000000" size="0x1000" init   ="0" default="1"/>
 					<algorithm name="Flash/SC32F56xx.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
 					<description>
-SC32F5632 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 48MHz. and DMA can meet a variety of multiplication, division, shift operation.
+SC32F5632 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 64MHz. and DMA can meet a variety of multiplication, division, shift operation.
 SC32F5632 supports single power, and intigrates high precision high speed and low speed oscillators, and supports a variety of low power mode. The  integration of multi-channel enhanced PWM, multi-channel high precision, high speed ADC, analog comparator and multi channel high speed operational amplifier, and enhanced timer with a variety of power mode, can meet a variety of motor and power control system application requirements.
 -32 kB on-chip FLASH programming memory, data retention >10 years. 
 -4 kB SRAM, with parity check 
@@ -57,7 +57,7 @@ SC32F5632 supports single power, and intigrates high precision high speed and lo
 					<memory id="IRAM1" start="0x20000000" size="0x1800" init   ="0" default="1"/>
 					<algorithm name="Flash/SC32F56xx.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
 					<description>
-SC32F5664 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 48MHz. and DMA can meet a variety of multiplication, division, shift operation.
+SC32F5664 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 64MHz. and DMA can meet a variety of multiplication, division, shift operation.
 SC32F5664 supports single power, and intigrates high precision high speed and low speed oscillators, and supports a variety of low power mode. The  integration of multi-channel enhanced PWM, multi-channel high precision, high speed ADC, analog comparator and multi channel high speed operational amplifier, and enhanced timer with a variety of power mode, can meet a variety of motor and power control system application requirements.
 -64 kB on-chip FLASH programming memory, data retention >10 years. 
 -6 kB SRAM, with parity check 
@@ -71,7 +71,7 @@ SC32F5664 supports single power, and intigrates high precision high speed and lo
 					<memory id="IRAM1" start="0x20000000" size="0x1000" init   ="0" default="1"/>
 					<algorithm name="Flash/SC32F56xx_BOOT.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
 					<description>
-SC32F5632 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 48MHz. and DMA can meet a variety of multiplication, division, shift operation.
+SC32F5632 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 64MHz. and DMA can meet a variety of multiplication, division, shift operation.
 SC32F5632 supports single power, and intigrates high precision high speed and low speed oscillators, and supports a variety of low power mode. The  integration of multi-channel enhanced PWM, multi-channel high precision, high speed ADC, analog comparator and multi channel high speed operational amplifier, and enhanced timer with a variety of power mode, can meet a variety of motor and power control system application requirements.
 -32 kB on-chip FLASH programming memory, data retention >10 years. 
 -4 kB SRAM, with parity check 
@@ -85,7 +85,7 @@ SC32F5632 supports single power, and intigrates high precision high speed and lo
 					<memory id="IRAM1" start="0x20000000" size="0x1800" init   ="0" default="1"/>
 					<algorithm name="Flash/SC32F56xx_BOOT.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
 					<description>
-SC32F5664 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 48MHz. and DMA can meet a variety of multiplication, division, shift operation.
+SC32F5664 is designed intended for motor control and digital control power supply applications. It uses Cortex-M0 core with maximum operating frequency 64MHz. and DMA can meet a variety of multiplication, division, shift operation.
 SC32F5664 supports single power, and intigrates high precision high speed and low speed oscillators, and supports a variety of low power mode. The  integration of multi-channel enhanced PWM, multi-channel high precision, high speed ADC, analog comparator and multi channel high speed operational amplifier, and enhanced timer with a variety of power mode, can meet a variety of motor and power control system application requirements.
 -64 kB on-chip FLASH programming memory, data retention >10 years. 
 -6 kB SRAM, with parity check 
