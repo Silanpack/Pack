@@ -7,11 +7,7 @@
 	<url>https://github.com/Silanpack/Pack/raw/main/</url>
 	
 	<releases>
-		<release version="1.0.8" date="2020-11-30">
-			update it files
-		</release>	
-	
-		<release version="1.0.7" date="2020-11-28">
+		<release version="1.1.0" date="2020-12-11">
 			Initial Version
 		</release>	
 	</releases>
@@ -30,6 +26,13 @@
 			<subFamily DsubFamily="SC32F53xx">
 				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
 				<processor Dclock="48000000"/>
+				<feature type="VCC"				n="2.00"	m="5.50"/>
+				<feature type="Temp"			n="-40"		m="105"/>
+				<feature type="UART"			n="6"/>
+				<feature type="SPI"				n="1"/>
+				<feature type="Timer"			n="6"       m="16"/>
+				<feature type="WDT"    			n="2"/>
+				<feature type="ADC"    	n="16"      m="12"/>
 			  
 				<!-- *************************  Device 'SC32F53128'  ***************************** -->
 				<device Dname="SC32F53128">
