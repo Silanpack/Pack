@@ -4,7 +4,7 @@
   <url>https://github.com/Silanpack/Pack/raw/main/</url>
   <timestamp>2020-12-18T08:00:30.8437571+00:00</timestamp>
   <pindex>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F53xx_DFP" version="1.1.0"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F53xx_DFP" version="1.1.1"/>
 	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5632_DFP" version="1.1.0"/>
 	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5832_DFP" version="1.1.0"/>
 	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SPC7L64A_DFP" version="1.1.0"/>
