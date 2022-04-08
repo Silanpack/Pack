@@ -5,6 +5,10 @@
 	<description>Silan SC32F56xx Device Family Pack</description>
 	<url>https://github.com/Silanpack/Pack/raw/main/</url>
 	<releases>
+		<release version="1.1.1" date="2021-07-29">
+			Update svd
+		</release>	
+	
 		<release version="1.1.0" date="2020-12-02">
 			Initial Version
 		</release>	
