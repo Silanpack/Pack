@@ -7,6 +7,10 @@
 	<url>https://github.com/Silanpack/Pack/raw/main/</url>
 	
 	<releases>
+		<release version="1.0.2" date="2023-02-13">
+			update StdPeriph Driver
+		</release>
+
 		<release version="1.0.1" date="2021-09-13">
 			Add StdPeriph Driver
 		</release>
@@ -93,25 +97,25 @@
 		<condition id="SC32F57128">
 			<description>Silan SC32F57 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN:164" Dname="SC32F57128"/>
+			<require Dvendor="SILAN" Dname="SC32F57128"/>
 		</condition>
 	
 		<condition id="SC32F57128_BOOT">
 			<description>Silan SC32F57 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN:164" Dname="SC32F57128_BOOT"/>
+			<require Dvendor="SILAN" Dname="SC32F57128_BOOT"/>
 		</condition>
 		
 		<condition id="SC32F5764">
 			<description>Silan SC32F57 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN:164" Dname="SC32F5764"/>
+			<require Dvendor="SILAN" Dname="SC32F5764"/>
 		</condition>
 	
 		<condition id="SC32F5764_BOOT">
 			<description>Silan SC32F57 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN:164" Dname="SC32F5764_BOOT"/>
+			<require Dvendor="SILAN" Dname="SC32F5764_BOOT"/>
 		</condition>
     
 		<condition id="Startup ARM">
@@ -131,7 +135,8 @@
 		
 		<condition id="SC32F57xx">
 			<description>Silan Microelectronics SC32F57xx Device</description>
-			<require Dvendor="SILAN:164" Dname="SC32F57*"/>
+			<require Dvendor="SILAN" Dname="SC32F5764*"/>
+			<require Dvendor="SILAN" Dname="SC32F57128*"/>
 		</condition>
 		
 		<condition id="SC32F57xx STDPERIPH">
