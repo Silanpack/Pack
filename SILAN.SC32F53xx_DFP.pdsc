@@ -109,25 +109,25 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		<condition id="SC32F53128">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F53128"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53128"/>
 		</condition>
 	
 		<condition id="SC32F53128_BOOT">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F53128_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53128_BOOT"/>
 		</condition>
 		
 		<condition id="SC32F5364">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5364"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364"/>
 		</condition>
 	
 		<condition id="SC32F5364_BOOT">
 			<description>Silan SC32F53128 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5364_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364_BOOT"/>
 		</condition>
     
 		<condition id="Startup ARM">
@@ -147,8 +147,8 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<condition id="SC32F53xx">
 			<description>Silan Microelectronics SC32F53128xx Device</description>
-			<require Dvendor="SILAN" Dname="SC32F5364*"/>
-			<require Dvendor="SILAN" Dname="SC32F53128*"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364*"/>
+			<require Dvendor="SILAN:164" Dname="SC32F53128*"/>
 		</condition>
 		
 		<condition id="SC32F53xx STDPERIPH">

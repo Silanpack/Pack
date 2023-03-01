@@ -82,12 +82,12 @@ It uses Cortex-M0 kernel with 64K byte Flash memory and 6K byte RAM memory, up t
 		<condition id="SPC7L64">
 			<description>Slian SPC7Lxx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SPC7L64"/>
+			<require Dvendor="SILAN:164" Dname="SPC7L64"/>
 		</condition>
 		<condition id="SPC7L64_BOOT">
 			<description>Slian SPC7Lxx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SPC7L64_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SPC7L64_BOOT"/>
 		</condition>
 		<condition id="Startup ARM">
 			<description>Startupassembler file for ARMCC</description>

@@ -115,22 +115,22 @@ SC32F5864 supports single power, and intigrates high precision high speed and lo
 		<condition id="SC32F5832">
 			<description>Slian SC32F58xx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5832"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5832"/>
 		</condition>
 		<condition id="SC32F5864">
 			<description>Slian SC32F58xx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5864"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5864"/>
 		</condition>
 		<condition id="SC32F5832_BOOT">
 			<description>Slian SC32F58xx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5832_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5832_BOOT"/>
 		</condition>
 		<condition id="SC32F5864_BOOT">
 			<description>Slian SC32F58xx Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
-			<require Dvendor="SILAN" Dname="SC32F5864_BOOT"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5864_BOOT"/>
 		</condition>
 		<condition id="Startup ARM">
 			<description>Startupassembler file for ARMCC</description>
