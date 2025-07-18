@@ -2,13 +2,13 @@
 <index schemaVersion="1.0.0" xs:noNamespaceSchemaLocation="PackIndex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
   <vendor>SILAN</vendor>
   <url>https://github.com/Silanpack/Pack/raw/main/</url>
-  <timestamp>2023-03-01T08:00:30.8437571+00:00</timestamp>
+  <timestamp>2025-07-18T08:00:30.8437571+00:00</timestamp>
   <pindex>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F53xx_DFP" version="1.1.1"/>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F57xx_DFP" version="1.0.2"/>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5632_DFP" version="1.1.1"/>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5832_DFP" version="1.1.2"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F53xx_DFP" version="1.1.5"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F57xx_DFP" version="1.0.5"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F56xx_DFP" version="1.1.5"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F5832_DFP" version="1.1.4"/>
 	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SC32F58xx_DFP" version="1.4.0"/>
-	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SPC7L64_DFP" version="1.1.2"/>
+	<pdsc url="https://github.com/Silanpack/Pack/raw/main/" vendor="SILAN" name="SPC7L64_DFP" version="1.1.3"/>
   </pindex>
 </index>

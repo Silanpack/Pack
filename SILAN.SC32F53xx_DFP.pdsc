@@ -7,6 +7,22 @@
 	<url>https://github.com/Silanpack/Pack/raw/main/</url>
 	
 	<releases>
+		<release version="1.1.5" date="2024-04-25">
+			Update SC32F53xxH Flash algorithm
+		</release>
+	
+		<release version="1.1.4" date="2023-11-12">
+			update startup_SC32F53xxH.s
+		</release>
+	
+		<release version="1.1.3" date="2023-07-27">
+			Add SC32F53xxH
+		</release>
+	
+		<release version="1.1.2" date="2023-07-13">
+			Update Flash algorithm
+		</release>
+	
 		<release version="1.1.1" date="2021-10-14">
 			Update Drivers
 		</release>
@@ -21,12 +37,15 @@
 		<keyword>SC32F53xx</keyword>
 		<keyword>SC32F5364</keyword>
 		<keyword>SC32F53128</keyword>
+		<keyword>SC32F53xxH</keyword>
+		<keyword>SC32F5332H</keyword>
+		<keyword>SC32F5364H</keyword>
 	</keywords>
 
 	<!-- devices section (mandatory for Device Family Packs) -->
 	<devices>
 		<family Dfamily="SC32F53 Series" Dvendor="SILAN:164">
-		<!-- ************************  Subfamily 'SC32F53xx'  **************************** -->
+			<!-- ************************  Subfamily 'SC32F53xx'  **************************** -->
 			<subFamily DsubFamily="SC32F53xx">
 				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
 				<processor Dclock="48000000"/>
@@ -90,6 +109,45 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 					</description>
 				</device>
 			</subFamily>
+			
+			<!-- ************************  Subfamily 'SC32F53xxH'  **************************** -->
+			<subFamily DsubFamily="SC32F53xxH">
+				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian"/>
+				<processor Dclock="48000000"/>
+				<debug svd="SVD/SC32F53xxH.svd"/>
+			  
+				<!-- *************************  Device 'SC32F5332H'  ***************************** -->
+				<device Dname="SC32F5332H">
+					<compile header="Device/Include/SC32F53xxH.h"/>          
+					<memory     id="IROM1"                      start="0x00000000"  size="0x8000"     startup="1"   default="1"/>
+					<memory     id="IRAM1"                      start="0x20000000"  size="0x2800"     init="0"   default="1"/>
+					<algorithm name="Flash/SC32F5332H.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
+				</device>
+				
+				<!-- *************************  Device 'SC32F5332H_BOOT'  ***************************** -->
+				<device Dname="SC32F5332H_BOOT">
+					<compile header="Device/Include/SC32F53xxH.h"/>          
+					<memory     id="IROM1"                      start="0x00000000"  size="0x8000"     startup="1"   default="1"/>
+					<memory     id="IRAM1"                      start="0x20000000"  size="0x2800"     init="0"   default="1"/>
+					<algorithm name="Flash/SC32F5332H_BOOT.FLM" start="0x00000000" size="0x8000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
+				</device>
+				
+				<!-- *************************  Device 'SC32F5364H'  ***************************** -->
+				<device Dname="SC32F5364H">
+					<compile header="Device/Include/SC32F53xxH.h"/>          
+					<memory     id="IROM1"                      start="0x00000000"  size="0x10000"     startup="1"   default="1"/>
+					<memory     id="IRAM1"                      start="0x20000000"  size="0x2800"     init="0"   default="1"/>
+					<algorithm name="Flash/SC32F5364H.FLM" start="0x00000000" size="0x10000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
+				</device>
+				
+				<!-- *************************  Device 'SC32F5364H_BOOT'  ***************************** -->
+				<device Dname="SC32F5364H_BOOT">
+					<compile header="Device/Include/SC32F53xxH.h"/>          
+					<memory     id="IROM1"                      start="0x00000000"  size="0x10000"     startup="1"   default="1"/>
+					<memory     id="IRAM1"                      start="0x20000000"  size="0x2800"     init="0"   default="1"/>
+					<algorithm name="Flash/SC32F5364H_BOOT.FLM" start="0x00000000" size="0x10000" RAMstart="0x20000000" RAMsize="0x0800" default="1"/>
+				</device>		
+			</subFamily>
 		</family>
 	</devices>
 
@@ -107,27 +165,51 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		</condition>
     
 		<condition id="SC32F53128">
-			<description>Silan SC32F53128 Series devices</description>
+			<description>Silan SC32F53 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
 			<require Dvendor="SILAN:164" Dname="SC32F53128"/>
 		</condition>
 	
 		<condition id="SC32F53128_BOOT">
-			<description>Silan SC32F53128 Series devices</description>
+			<description>Silan SC32F53 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
 			<require Dvendor="SILAN:164" Dname="SC32F53128_BOOT"/>
 		</condition>
 		
 		<condition id="SC32F5364">
-			<description>Silan SC32F53128 Series devices</description>
+			<description>Silan SC32F53 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
 			<require Dvendor="SILAN:164" Dname="SC32F5364"/>
 		</condition>
 	
 		<condition id="SC32F5364_BOOT">
-			<description>Silan SC32F53128 Series devices</description>
+			<description>Silan SC32F53 Series devices</description>
 			<require Cclass="CMSIS" Cgroup="CORE"/>
 			<require Dvendor="SILAN:164" Dname="SC32F5364_BOOT"/>
+		</condition>
+		
+		<condition id="SC32F5332H">
+			<description>Silan SC32F53 Series devices</description>
+			<require Cclass="CMSIS" Cgroup="CORE"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5332H"/>
+		</condition>
+		
+		<condition id="SC32F5332H_BOOT">
+			<description>Silan SC32F53 Series devices</description>
+			<require Cclass="CMSIS" Cgroup="CORE"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5332H_BOOT"/>
+		</condition>
+		
+		<condition id="SC32F5364H">
+			<description>Silan SC32F53 Series devices</description>
+			<require Cclass="CMSIS" Cgroup="CORE"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364H"/>
+		</condition>
+		
+		<condition id="SC32F5364H_BOOT">
+			<description>Silan SC32F53 Series devices</description>
+			<require Cclass="CMSIS" Cgroup="CORE"/>
+			<require Dvendor="SILAN:164" Dname="SC32F5364H_BOOT"/>
 		</condition>
     
 		<condition id="Startup ARM">
@@ -147,8 +229,10 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<condition id="SC32F53xx">
 			<description>Silan Microelectronics SC32F53128xx Device</description>
-			<require Dvendor="SILAN:164" Dname="SC32F5364*"/>
-			<require Dvendor="SILAN:164" Dname="SC32F53128*"/>
+			<accept Dvendor="SILAN:164" Dname="SC32F5364"/>
+			<accept Dvendor="SILAN:164" Dname="SC32F53128"/>
+			<accept Dvendor="SILAN:164" Dname="SC32F5364_BOOT"/>
+			<accept Dvendor="SILAN:164" Dname="SC32F53128_BOOT"/>
 		</condition>
 		
 		<condition id="SC32F53xx STDPERIPH">
@@ -162,7 +246,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 	<components>
 		<!-- Startup SC32F53128 -->
 		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F53128">
-			<description>System Startup for Slian SC32F53128 Series</description>
+			<description>System Startup for Slian SC32F53128</description>
 			<files>
 				<!-- include folder / file -->
 				<file category="include" name="Device/Include/"/>
@@ -178,7 +262,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<!-- Startup SC32F53128_BOOT -->
 		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F53128_BOOT">
-			<description>System Startup for Slian SC32F53128_BOOT Series</description>
+			<description>System Startup for Slian SC32F53128_BOOT</description>
 			<files>
 				<!-- include folder / file -->
 				<file category="include" name="Device/Include/"/>
@@ -194,7 +278,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<!-- Startup SC32F5364 -->
 		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5364">
-			<description>System Startup for Slian SC32F5364 Series</description>
+			<description>System Startup for Slian SC32F5364</description>
 			<files>
 				<!-- include folder / file -->
 				<file category="include" name="Device/Include/"/>
@@ -210,7 +294,7 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 		
 		<!-- Startup SC32F5364_BOOT -->
 		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5364_BOOT">
-			<description>System Startup for Slian SC32F5364_BOOT Series</description>
+			<description>System Startup for Slian SC32F5364_BOOT</description>
 			<files>
 				<!-- include folder / file -->
 				<file category="include" name="Device/Include/"/>
@@ -221,6 +305,70 @@ SC32F5364 supports up to 64KB FLASH and 8KB SRAM, and integrates abundant timers
 				
 				<!-- system file -->
 				<file category="source" name="Device/Source/system_SC32F5364.c" attr="config" version="1.0.0" />
+			</files>
+		</component>
+		
+		<!-- Startup SC32F5332H -->
+		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5332H">
+			<description>System Startup for Slian SC32F5332H Series</description>
+			<files>
+				<!-- include folder / file -->
+				<file category="include" name="Device/Include/"/>
+				<!-- startup / system file -->
+				<file category="source" name="Device/Source/ARM/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup ARM"/>
+				<file category="source" name="Device/Source/GCC/startup_SC32F53xxH.S" attr="config" version="1.0.1" condition="Startup GCC"/>
+				<file category="source" name="Device/Source/IAR/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup IAR"/>
+				
+				<!-- system file -->
+				<file category="source" name="Device/Source/system_SC32F53xxH.c" attr="config" version="1.0.0" />
+			</files>
+		</component>
+		
+		<!-- Startup SC32F5332H_BOOT -->
+		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5332H_BOOT">
+			<description>System Startup for Slian SC32F5332H_BOOT</description>
+			<files>
+				<!-- include folder / file -->
+				<file category="include" name="Device/Include/"/>
+				<!-- startup / system file -->
+				<file category="source" name="Device/Source/ARM/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup ARM"/>
+				<file category="source" name="Device/Source/GCC/startup_SC32F53xxH.S" attr="config" version="1.0.1" condition="Startup GCC"/>
+				<file category="source" name="Device/Source/IAR/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup IAR"/>
+				
+				<!-- system file -->
+				<file category="source" name="Device/Source/system_SC32F53xxH.c" attr="config" version="1.0.0" />
+			</files>
+		</component>
+	
+		<!-- Startup SC32F5364H -->
+		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5364H">
+			<description>System Startup for Slian SC32F5364H</description>
+			<files>
+				<!-- include folder / file -->
+				<file category="include" name="Device/Include/"/>
+				<!-- startup / system file -->
+				<file category="source" name="Device/Source/ARM/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup ARM"/>
+				<file category="source" name="Device/Source/GCC/startup_SC32F53xxH.S" attr="config" version="1.0.1" condition="Startup GCC"/>
+				<file category="source" name="Device/Source/IAR/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup IAR"/>
+				
+				<!-- system file -->
+				<file category="source" name="Device/Source/system_SC32F53xxH.c" attr="config" version="1.0.0" />
+			</files>
+		</component>
+		
+		<!-- Startup SC32F5364H_BOOT -->
+		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="SC32F5364H_BOOT">
+			<description>System Startup for Slian SC32F5364H_BOOT</description>
+			<files>
+				<!-- include folder / file -->
+				<file category="include" name="Device/Include/"/>
+				<!-- startup / system file -->
+				<file category="source" name="Device/Source/ARM/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup ARM"/>
+				<file category="source" name="Device/Source/GCC/startup_SC32F53xxH.S" attr="config" version="1.0.1" condition="Startup GCC"/>
+				<file category="source" name="Device/Source/IAR/startup_SC32F53xxH.s" attr="config" version="1.0.1" condition="Startup IAR"/>
+				
+				<!-- system file -->
+				<file category="source" name="Device/Source/system_SC32F53xxH.c" attr="config" version="1.0.0" />
 			</files>
 		</component>
 
